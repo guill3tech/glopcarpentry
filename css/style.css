@@ -1,8 +1,9 @@
 /* Your custom styles */
 
 body {
-	font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
+
 
 /* Required for full background image */
 
@@ -10,93 +11,111 @@ html,
 body,
 header,
 .view {
-  height: 100%;
+    height: 100%;
 }
-
-
-
 
 @media (max-width: 740px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 1100px;
-	width: 100%;
-  }
-  iframe{
-	width: 100%;
-  }
-   
+    html,
+    body,
+    header,
+    .view {
+        height: 1100px;
+        width: 100%;
+    }
+    iframe {
+        width: 100%;
+    }
 }
+
 @media (min-width: 800px) and (max-width: 850px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 700px;
-	
-  }
-   
+    html,
+    body,
+    header,
+    .view {
+        height: 700px;
+    }
 }
 
 .top-nav-collapse {
-  background-color: #39448c !important;
+    background-color: #39448c !important;
 }
 
 .navbar:not(.top-nav-collapse) {
-  background: transparent !important;
+    background: transparent !important;
 }
 
+
+/********************** Inicio dispositivos menores de 768px de resolucion **************************/
+
 @media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #39448c !important;
-  }
+    .navbar:not(.top-nav-collapse) {
+        background: #39448c !important;
+    }
+    .navbar-collapse {
+        margin-bottom: -15%;
+    }
+    #socialicons {
+        visibility: hidden;
+    }
+    #menu {
+        text-align: center;
+    }
+    #mylogo {
+        display: block;
+        margin: auto;
+    }
+    #contact-form {
+        padding: 8px !important;
+    }
 }
+
+
+/********************** Fin dispositivos menores de 768px de resolucion **************************/
+
 @media (min-width: 800px) and (max-width: 850px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #39448c !important;
-  }
+    .navbar:not(.top-nav-collapse) {
+        background: #39448c !important;
+    }
 }
 
 h6 {
-  line-height: 1.7;
+    line-height: 1.7;
 }
 
+
 /* efecto hover imagenes portfolio */
+
 .img {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 .middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .div-img:hover .img {
- 
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .div-img:hover .middle {
-  opacity: 1;
+    opacity: 1;
 }
 
 .text {
-  background-color: rgb(83, 85, 204);
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+    background-color: rgb(83, 85, 204);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
-               
